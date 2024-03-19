@@ -224,7 +224,7 @@ def add_description(commit_msg):
     else:
         commit_msg += ": "
 
-    num_chars_remaining = 50 - len(commit_msg)
+    num_chars_remaining = 72 - len(commit_msg)
     Ansi.print_info(
         wrap_width(
             "\nWhat is the commit description / title. A short summary of the code changes. Use the imperative mood. No more than {} characters.".format(
